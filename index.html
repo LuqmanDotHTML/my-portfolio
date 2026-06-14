@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Luqman</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">Luqman</div>
+
+            <div class="nav-links">
+                <a href="#profile">Profile</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- SCROLL PROGRESS LINE -->
+        <div id="scrollProgress"></div>
+
+        <div class="burgundy-badge">
+        <span class="badge-dot"></span>
+        My favourite color is <strong>burgundy</strong>
+    </div>
+    <!-- HERO SECTION -->
+    <header class="hero extreme-hero">
+
+        <div class="hero-bg-grid"></div>
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <div class="hero-content extreme-content">
+
+            <div class="hero-text extreme-text">
+                <p class="tagline">&lt; Computer Science Portfolio /&gt;</p>
+
+                <h1 class="glitch" data-text="LUQMAN">
+                    LUQMAN
+                </h1>
+
+                <h2>
+                    I build ideas into systems.
+                </h2>
+
+                <p>
+                    Computer Science diploma student focused on web development,
+                    software design, Java, databases, and building digital solutions
+                    that solve real student problems.
+                </p>
+
+                <div class="code-pills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                    <span>Firebase</span>
+                </div>
+
+                <div class="hero-buttons">
+                    <a class="btn" href="#projects">Explore Projects</a>
+                    <a class="btn secondary-btn" href="#contact">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="mega-terminal">
+                <div class="terminal-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <pre>
+    <span class="command">&gt; initializing portfolio...</span>
+    Status: Online
+
+    <span class="command">&gt; user.profile</span>
+    Name: Luqman Bin Mohamed Azhar
+    Role: CS Diploma Student
+
+    <span class="command">&gt; current.focus</span>
+    Web Development
+    Java Programming
+    System Design
+
+    <span class="command">&gt; internship.status</span>
+    Searching for opportunities...
+                </pre>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- STATS SECTION -->
+    <section class="container stats-grid" id="stats">
+
+    <div class="stat-card">
+        <h3 class="stat-number" data-final="3+">0</h3>
+        <p>Projects Built</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 class="stat-number" data-final="1">0</h3>
+        <p>Hackathon Award</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 class="stat-number" data-final="8+">0</h3>
+        <p>Tech Skills</p>
+    </div>
+
+    <div class="stat-card">
+        <h3 class="stat-number" data-final="CS">0</h3>
+        <p>Diploma Student</p>
+    </div>
+
+</section>
+
+    <!-- PROFILE / ABOUT ME SECTION -->
+    <section id="profile" class="container about-showcase">
+
+        <div class="about-copy">
+            <p class="section-label">ABOUT ME</p>
+
+            <p class="reveal-text">
+                I’m a Computer Science diploma student in Malaysia who enjoys coding,
+                hackathons, system design, and building projects that solve real problems.
+            </p>
+
+            <p class="reveal-text">
+                Most of my projects come from simple ideas that can help students,
+                such as digital ticketing systems, campus apps, and system-based solutions.
+            </p>
+
+            <p class="reveal-text">
+                I’m currently improving my skills in web development, Java, database design,
+                and software development while preparing for internship opportunities.
+            </p>
+
+            <div class="skill-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Java</span>
+                <span>Firebase</span>
+                <span>Flutter</span>
+                <span>MySQL</span>
+                <span>GitHub</span>
+            </div>
+        </div>
+
+        <div class="photo-panel photo-slider" id="photoSlider">
+
+            <div class="photo-top">
+                <span>Luq</span>
+
+                <div class="photo-dots">
+                    <i class="photo-dot active" onclick="goToPhoto(0)"></i>
+                    <i class="photo-dot" onclick="goToPhoto(1)"></i>
+                    <i class="photo-dot" onclick="goToPhoto(2)"></i>
+                </div>
+            </div>
+
+            <div class="photo-track" id="photoTrack">
+                <img src="images/profile1.jpg" alt="Luqman profile photo 1" class="profile-photo">
+                <img src="images/profile2.jpg" alt="Luqman profile photo 2" class="profile-photo">
+                <img src="images/profile3.jpg" alt="Luqman profile photo 3" class="profile-photo">
+            </div>
+
+            <div class="photo-footer">
+                <h3>Luqman</h3>
+                <p>Drag photo • Malaysia • 2026</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+<section id="projects" class="container projects-showcase">
+
+    <div class="projects-header">
+        <p class="section-label">&lt; PROJECT ARCHIVE /&gt;</p>
+        <h2>Featured Builds</h2>
+        <p>
+            A collection of systems, apps, and ideas I’ve worked on while learning
+            computer science and software development.
+        </p>
+    </div>
+
+    <div class="project-grid extreme-project-grid">
+
+        <div class="project-card extreme-project-card" data-project="01">
+            <div class="project-glow"></div>
+
+            <div class="project-top">
+                <span class="project-status">AWARD WINNER</span>
+                <span class="project-number">01</span>
+            </div>
+
+            <h3>Hackblast Ticket Website 🥉</h3>
+
+            <p>
+                A digital ticketing system created for students. This project won
+                3rd place in Hackblast, competing with degree students.
+            </p>
+
+            <div class="tech-used">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Hackathon Project</span>
+                <a href="#contact">Ask About This →</a>
+            </div>
+        </div>
+
+        <div class="project-card extreme-project-card" data-project="02">
+            <div class="project-glow"></div>
+
+            <div class="project-top">
+                <span class="project-status">SYSTEM DESIGN</span>
+                <span class="project-number">02</span>
+            </div>
+
+            <h3>Car Rental System</h3>
+
+            <p>
+                A Java-based system project developed for CSC186, focusing on
+                object-oriented programming, classes, and system flow.
+            </p>
+
+            <div class="tech-used">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>System Design</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Academic Project</span>
+                <a href="#contact">Ask About This →</a>
+            </div>
+        </div>
+
+        <div class="project-card extreme-project-card" data-project="03">
+            <div class="project-glow"></div>
+
+            <div class="project-top">
+                <span class="project-status">APP CONCEPT</span>
+                <span class="project-number">03</span>
+            </div>
+
+            <h3>Lost & Found Campus App</h3>
+
+            <p>
+                A campus application idea that helps students report, search,
+                and recover lost items more efficiently.
+            </p>
+
+            <div class="tech-used">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Mobile App</span>
+            </div>
+
+            <div class="project-footer">
+                <span>Mobile App Idea</span>
+                <a href="#contact">Ask About This →</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="container education-lab">
+
+    <div class="projects-header">
+        <p class="section-label">&lt; EDUCATION PATH /&gt;</p>
+        <h2>Learning Journey</h2>
+        <p>
+            My current academic path and the computer science areas I’m building along the way.
+        </p>
+    </div>
+
+    <div class="education-grid">
+
+        <div class="education-card main-education-card">
+            <span class="edu-tag">CURRENT STUDY</span>
+
+            <h3>Diploma in Computer Science</h3>
+
+            <p>
+                Currently studying programming, system development, databases,
+                software design, and problem-solving through real academic projects.
+            </p>
+
+            <div class="edu-progress">
+                <div class="edu-progress-bar"></div>
+            </div>
+
+            <small>Progress: building skills semester by semester</small>
+        </div>
+
+        <div class="education-card learning-card">
+            <span class="edu-tag">CURRENTLY LEARNING</span>
+
+            <div class="learning-grid">
+                <div>
+                    <h4>01</h4>
+                    <p>Object-Oriented Programming</p>
+                </div>
+
+                <div>
+                    <h4>02</h4>
+                    <p>Web Development</p>
+                </div>
+
+                <div>
+                    <h4>03</h4>
+                    <p>Database Design</p>
+                </div>
+
+                <div>
+                    <h4>04</h4>
+                    <p>System Analysis</p>
+                </div>
+
+                <div>
+                    <h4>05</h4>
+                    <p>Data Structures</p>
+                </div>
+
+                <div>
+                    <h4>06</h4>
+                    <p>Software Design</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container contact-zone">
+
+    <div class="projects-header">
+        <p class="section-label">&lt; CONNECT WITH ME /&gt;</p>
+        <h2>Contact Console</h2>
+        <p>
+            Want to connect, collaborate, or check out my work? Choose a channel below.
+        </p>
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <span class="edu-tag">AVAILABLE FOR INTERNSHIP</span>
+
+            <h3>Let’s build something.</h3>
+
+            <p>
+                I’m looking for internship opportunities in software development,
+                web development, and system design.
+            </p>
+
+            <div class="contact-buttons">
+                <button class="contact-btn" onclick="copyEmail()">Copy Email</button>
+
+                <a class="contact-btn" href="https://github.com/LuqmanDotHTML" target="_blank">
+                    GitHub
+                </a>
+
+                <a class="contact-btn" href="https://www.linkedin.com/in/luqman-azhar-bb3968372/" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a class="contact-btn" href="https://www.instagram.com/luqstuffs/" target="_blank">
+                    Instagram
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-terminal">
+            <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <pre><span class="command">&gt; contact.email</span>
+                luqman4zhar@gmail.com
+
+    <span class="command">&gt; github</span>
+        github.com/LuqmanDotHTML
+
+    <span class="command">&gt; status</span>
+        Open to internship opportunities
+
+    <span class="command">&gt; response.time</span>
+        Usually replies soon...</pre>
+        </div>
+
+    </div>
+
+    <div id="copyToast">Email copied!</div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Luqman | Built with HTML, CSS & JavaScript
+    </footer>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
